@@ -1,6 +1,7 @@
 import React from "react"
+import ri from "@madebyconnor"
 import RichText from '@madebyconnor/rich-text-to-jsx';
-registerPlugin(RichText);
+ri.registerPlugin(RichText);
 /*class rich extends React.Component {
     constructor(props){
         super(props);
