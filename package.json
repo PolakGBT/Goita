@@ -18,7 +18,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "@contentful/rich-text-types": "^12.1.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
