@@ -23,7 +23,7 @@ const Presentation = () => {
       }
     }
   `)
-  const document2 = data.allContentfulPresentation.nodes[1].paragraphe.json;
+  const document2 = data.allContentfulPresentation.nodes[0].paragraphe.json;
   return(
   <>
   <div class ="bar" 
@@ -34,11 +34,11 @@ const Presentation = () => {
   <div class="container">
       <div class="box-p">
           <div class="box-p-img">
-              <img src={data.allContentfulPresentation.nodes[1].image.fluid.src}alt=""></img>
+              <img src={data.allContentfulPresentation.nodes[0].image.fluid.src}alt=""></img>
           </div>
           <div class="box-p-info">
               <h1>
-                  {data.allContentfulPresentation.nodes[1].title}
+                  {data.allContentfulPresentation.nodes[0].title}
               </h1>
               <Rich text={document2}/>
           </div>
