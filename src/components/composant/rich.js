@@ -1,5 +1,6 @@
 import React from "react"
 import RichText from '@madebyconnor/rich-text-to-jsx';
+
 /*class rich extends React.Component {
     constructor(props){
         super(props);
