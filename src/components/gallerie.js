@@ -11,7 +11,7 @@ gsap.registerPlugin(CSSPlugin,Power0,TimelineMax);
 const Gallerie = () => {
     const data = useStaticQuery(graphql`
     {
-        contentfulGalerie {
+        contentfulCollection {
           titre
           image {
             fluid {
@@ -26,14 +26,14 @@ const Gallerie = () => {
   let block2 = useRef(null);
   let tl = new TimelineMax({repeat:-1});
   useEffect(()=>{
-    tl.to(block1,15,{xPercent:100,ease: Power0.easeNone},"same1");
+    tl.to(block1,40,{xPercent:100,ease: Power0.easeNone},"same1");
     tl.set(block1,{xPercent:-100});
-    tl.to(block1,15,{xPercent:0,ease: Power0.easeNone});
-    tl.to(block2,30,{xPercent:200,ease: Power0.easeNone},"same1");
+    tl.to(block1,40,{xPercent:0,ease: Power0.easeNone});
+    tl.to(block2,80,{xPercent:200,ease: Power0.easeNone},"same1");
   });
 
 
-  var img = data.contentfulGalerie.image;
+  var img = data.contentfulCollection.image;
   const list = img.map((img) =>
   <img rel="preload" src={img.fluid.src} style={{
     width:'auto',
@@ -61,7 +61,7 @@ const Gallerie = () => {
       justifyContent: "center"
     }}>
       <h1>
-        {data.contentfulGalerie.titre}
+        {data.contentfulCollection.titre}
       </h1>
     </div>
     <div style={{

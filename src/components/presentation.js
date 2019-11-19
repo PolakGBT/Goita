@@ -8,7 +8,7 @@ import Rich from "./composant/rich";
 const Presentation = () => {
     const data = useStaticQuery(graphql`
     {
-      allContentfulPresentation {
+      allContentfulSavoirFaire {
         nodes {
             title
             paragraphe {
@@ -23,7 +23,7 @@ const Presentation = () => {
       }
     }
   `)
-  const document2 = data.allContentfulPresentation.nodes[0].paragraphe.json;
+  const document2 = data.allContentfulSavoirFaire.nodes[0].paragraphe.json;
   return(
   <>
   <div class ="bar" 
@@ -34,11 +34,11 @@ const Presentation = () => {
   <div class="container">
       <div class="box-p">
           <div class="box-p-img">
-              <img src={data.allContentfulPresentation.nodes[0].image.fluid.src}alt=""></img>
+              <img src={data.allContentfulSavoirFaire.nodes[0].image.fluid.src}alt=""></img>
           </div>
           <div class="box-p-info">
               <h1>
-                  {data.allContentfulPresentation.nodes[0].title}
+                  {data.allContentfulSavoirFaire.nodes[0].title}
               </h1>
               <Rich text={document2}/>
           </div>
