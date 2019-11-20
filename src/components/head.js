@@ -29,10 +29,11 @@ const Head = () => {
             <h1>GOÏTA</h1>
           </div>
           <div class="menu">
-                <div class="part"onClick={()=>{Scrolling("Accueil")}}><p>Accueil</p></div>
-                <div class="part" onClick={()=>{Scrolling("Presentation")}}><p>Présentation</p></div>
-                <div class="part"onClick={()=>{Scrolling("Marque")}}><p>Marque</p></div>
-                <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>Galerie</p></div>
+                <div class="part"onClick={()=>{Scrolling("Accueil")}}><p>ACCUEIL</p></div>
+                <div class="part" onClick={()=>{Scrolling("Presentation")}}><p>SAVOIR-FAIRE</p></div>
+                <div class="part"onClick={()=>{Scrolling("Marque")}}><p>MARQUE</p></div>
+                <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>COLLECTION</p></div>
+                <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>CONTACT</p></div>
           </div>
       </div>
   </>

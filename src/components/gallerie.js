@@ -26,10 +26,10 @@ const Gallerie = () => {
   let block2 = useRef(null);
   let tl = new TimelineMax({repeat:-1});
   useEffect(()=>{
-    tl.to(block1,40,{xPercent:100,ease: Power0.easeNone},"same1");
+    tl.to(block1,80,{xPercent:100,ease: Power0.easeNone},"same1");
     tl.set(block1,{xPercent:-100});
-    tl.to(block1,40,{xPercent:0,ease: Power0.easeNone});
-    tl.to(block2,80,{xPercent:200,ease: Power0.easeNone},"same1");
+    tl.to(block1,80,{xPercent:0,ease: Power0.easeNone});
+    tl.to(block2,160,{xPercent:200,ease: Power0.easeNone},"same1");
   });
 
 
