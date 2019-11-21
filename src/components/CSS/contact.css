@@ -1,0 +1,9 @@
+@media screen and (max-width:550px){
+    .contactme{
+        order:1;
+        font-size: 25px!important;
+    }
+    .contact-mobile{
+        flex-direction: column-reverse;
+    }
+}

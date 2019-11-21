@@ -1,6 +1,8 @@
 import React from "react"
-import ScrollableComponent from "react"
 import "./CSS/header.css"
+import menu from "../images/menu.svg"
+import {TweenLite,Power0,CSSPlugin} from "gsap/all.js";
+import {useEffect, useRef } from 'react';
 
 const Head = () => {
 
@@ -8,6 +10,18 @@ const Head = () => {
     var elem = document.getElementById(prop);
     var ypos = elem.offsetTop;
     window.scrollTo(0,ypos-100);
+  }
+  let menublock = useRef(null);
+  var bool = false;
+  function oppen(){
+    if(!bool){
+      TweenLite.to(menublock,1,{height:'350px',ease: Power0.easeNone});
+      bool=true;
+    }
+    else{
+      TweenLite.to(menublock,1,{height:0,ease: Power0.easeNone});
+      bool=false;
+    }
   }
   /*window.addEventListener('scroll', Scool);
   
@@ -35,6 +49,16 @@ const Head = () => {
                 <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>COLLECTION</p></div>
                 <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>CONTACT</p></div>
           </div>
+          <div class="menu-mobile" onClick={()=>{oppen()}}>
+            <img src={menu}></img>
+          </div>
+      </div>
+      <div class="header-mobile" ref={el => menublock = el}>
+                <div class="part-mobile"onClick={()=>{Scrolling("Accueil")}}><p>ACCUEIL</p></div>
+                <div class="part-mobile" onClick={()=>{Scrolling("Presentation")}}><p>SAVOIR-FAIRE</p></div>
+                <div class="part-mobile"onClick={()=>{Scrolling("Marque")}}><p>MARQUE</p></div>
+                <div class="part-mobile"onClick={()=>{Scrolling("Gallerie")}}><p>COLLECTION</p></div>
+                <div class="part-mobile"onClick={()=>{Scrolling("Gallerie")}}><p>CONTACT</p></div>
       </div>
   </>
   )

@@ -1,6 +1,9 @@
 a{
     font-family: 'Playfair Display', serif;
 }
+body{
+    margin:0;
+}
 
 .header{
     position: sticky;
@@ -48,5 +51,61 @@ a{
 
 }
 
+.menu-mobile{
+    display: none;
+}
 
+
+@media screen and (max-width:550px){
+
+    .menu-mobile{
+        position: absolute;
+        display: flex;
+        height:100%;
+        top:0px;
+        right:15px;
+        align-items: center;
+        justify-content: center;
+    }   
+    .menu-mobile img{
+        height: 80%;
+        width: auto;
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        height: 50px;
+    }
+    
+}
+
+.header-mobile{
+    position: fixed;
+    top:50px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    z-index:2000;
+    flex-direction: column;
+}
+.part-mobile{
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.part-mobile p {
+    font-size: 20px;
+    font-Family: 'JaapokkienchanceRegular';
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
 

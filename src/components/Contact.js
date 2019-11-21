@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./CSS/contact.css"
 const Contact = () => {
     return (
         <>
@@ -10,7 +10,9 @@ const Contact = () => {
                 display:'flex',
                 margin:'auto',
                 alignItems:'center'
-            }}>
+            }}
+            class="contact-mobile"
+            >
                 <h1 style={{
                     color:'#848484',
                     fontFamily:' Didot',
@@ -24,7 +26,9 @@ const Contact = () => {
                     letterSpacing: '0.5px',
                     color: 'black',
                     margin:'auto',
-                }}>Contactez-Moi</p>
+                }}
+                class="contactme"
+                >Contactez-Moi</p>
                 <div style={{
                     display:'flex',
                     margin:'auto',

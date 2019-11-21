@@ -11,7 +11,8 @@
 }
 .box-img{
     width: 25%;
-    padding: 2px;
+    margin-right:2px;
+    margin-left:2px;
     height:auto;
     display: block;
 }
@@ -25,7 +26,8 @@
 }
 .reduce-img{
     width: 25%;
-    padding: 2px;
+    margin-right:2px;
+    margin-left:2px;
     height:auto;
     display: block;
 }
@@ -38,7 +40,6 @@
     }
     .box-img{
         width: 50%;
-        padding: 2px;
         height:auto;
     }
     
