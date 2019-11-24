@@ -3,14 +3,27 @@
     position: relative;
     display: flex;
     justify-content: center;
-    -webkit-box-flex: initial;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content:center;
 }
 .box{
     display: flex;
     width: 90%;
     position: relative;
     justify-content: center;
-    -webkit-box-flex: initial;
+    -webkit-justify-content:center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 .box-img{
     width: 24%;
