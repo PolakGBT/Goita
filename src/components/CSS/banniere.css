@@ -8,13 +8,12 @@
     display: flex;
     width: 90%;
     position: relative;
+    justify-content: center;
 }
 .box-img{
-    width: 25%;
-    margin-right:2px;
-    margin-left:2px;
+    width: 24%;
+    margin:auto;
     height:auto;
-    display: block;
 }
 .logo{
     position: absolute;
@@ -26,9 +25,8 @@
     display: none;
 }
 .reduce-img{
-    width: 25%;
-    margin-right:2px;
-    margin-left:2px;
+    width: 24%;
+    margin:auto;
     height:auto;
     display: block;
 }
