@@ -11,6 +11,7 @@
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content:center;
+    height: auto;
 }
 .box{
     display: flex;
@@ -24,6 +25,7 @@
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
+    height: auto;
 }
 .box-img{
     width: 24%;
