@@ -13,7 +13,6 @@ const Banniere = () => (
             <img class="box-img"src={TWO}alt=""></img>
             <img class="box-img"src={THREE}alt=""></img>
             <img class=" reduce-img"src={FOUR}alt=""></img>
-            <img class="logo"src={LOGO}alt=""></img>
         </div>
     </div>
 

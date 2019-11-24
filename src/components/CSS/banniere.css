@@ -23,6 +23,7 @@
     transform: translate(-50%,-50%);
     height: 20%;
     width:auto;
+    display: none;
 }
 .reduce-img{
     width: 25%;

@@ -2,10 +2,10 @@ import React from "react";
 import "./CSS/presentation.css";
 import "./CSS/Gallerie.css";
 import { useStaticQuery, graphql } from "gatsby";
-import {useEffect, useRef } from 'react';
-import {TimelineMax,Power0,CSSPlugin} from "gsap/all.js";
+import {useEffect, useRef ,useState} from 'react';
+import {TimelineMax,Power0} from "gsap";
 import gsap from "gsap";
-gsap.registerPlugin(CSSPlugin,Power0,TimelineMax);
+gsap.registerPlugin(Power0,TimelineMax);
 
 
 const Gallerie = () => {
@@ -22,9 +22,12 @@ const Gallerie = () => {
       }
   `)
   
+  
   let block1 = useRef(null);
   let block2 = useRef(null);
-  let tl = new TimelineMax({repeat:-1});
+  //let tl = new TimelineMax({repeat:-1});
+  const [tl] = useState(new TimelineMax({repeat:-1}));
+
   useEffect(()=>{
     tl.to(block1,80,{xPercent:100,ease: Power0.easeNone},"same1");
     tl.set(block1,{xPercent:-100});
