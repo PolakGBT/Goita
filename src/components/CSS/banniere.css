@@ -3,12 +3,14 @@
     position: relative;
     display: flex;
     justify-content: center;
+    -webkit-box-flex: initial;
 }
 .box{
     display: flex;
     width: 90%;
     position: relative;
     justify-content: center;
+    -webkit-box-flex: initial;
 }
 .box-img{
     width: 24%;
