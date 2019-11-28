@@ -10,16 +10,17 @@ const Head = () => {
     var elem = document.getElementById(prop);
     var ypos = elem.offsetTop;
     window.scrollTo(0,ypos-100);
+    oppen();
   }
   let menublock = useRef(null);
   var bool = false;
   function oppen(){
     if(!bool){
-      TweenLite.to(menublock,1,{height:'350px',ease: Power0.easeNone});
+      TweenLite.to(menublock,0.5,{height:'350px',ease: Power0.easeNone});
       bool=true;
     }
     else{
-      TweenLite.to(menublock,1,{height:0,ease: Power0.easeNone});
+      TweenLite.to(menublock,0.2,{height:0,ease: Power0.easeNone});
       bool=false;
     }
   }

@@ -25,7 +25,6 @@ const Gallerie = () => {
   
   let block1 = useRef(null);
   let block2 = useRef(null);
-  //let tl = new TimelineMax({repeat:-1});
   const [tl] = useState(new TimelineMax({repeat:-1}));
 
   useEffect(()=>{

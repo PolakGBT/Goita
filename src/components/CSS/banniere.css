@@ -58,6 +58,9 @@
         width: 50%;
         height:auto;
     }
+    .box{
+        display: inline-block;
+    }
     
 }
 

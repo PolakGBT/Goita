@@ -29,7 +29,7 @@
     align-items:center;
 }
 .box-p-img{
-    width: 30%;
+    width: 40%;
     padding: 10px;
     display: flex;
     position: relative;
@@ -42,7 +42,7 @@
 
 .box-p-info{
     padding: 10px;
-    width: 70%;
+    width: 60%;
     justify-content: center;
     display: flex;
     flex-direction: column;
