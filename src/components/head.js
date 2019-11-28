@@ -10,7 +10,9 @@ const Head = () => {
     var elem = document.getElementById(prop);
     var ypos = elem.offsetTop;
     window.scrollTo(0,ypos-100);
-    oppen();
+    if(window.innerWidth <= 375){
+      oppen();
+    }
   }
   let menublock = useRef(null);
   var bool = false;
