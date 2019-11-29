@@ -1,6 +1,7 @@
 import React from "react"
 import "./CSS/header.css"
 import menu from "../images/menu.svg"
+import logo from "../images/logo-goita-noir.png"
 import {TweenLite,Power0,CSSPlugin} from "gsap/all.js";
 import {useEffect, useRef } from 'react';
 
@@ -42,6 +43,9 @@ const Head = () => {
   return(
   <>
       <div class="header">
+        <div class="logo-p">
+          <img src={logo}></img>
+        </div>
           <div class="title">
             <h1>GOÏTA</h1>
           </div>

@@ -77,6 +77,9 @@ body{
     .header{
         height: 50px;
     }
+    .logo-p img{
+        height: 80%!important;
+    }
     
 }
 
@@ -108,4 +111,21 @@ body{
     margin-block-end: 0px;
     margin-block-start: 0px;
 }
+
+.logo-p{
+    position: absolute;
+    display: flex;
+    height: 80%;
+    top:4px;
+    left:4px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-p img{
+    height: 100%;
+    width: auto;
+}
+
 
