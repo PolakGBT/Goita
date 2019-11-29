@@ -50,6 +50,9 @@ const Contact = () => {
                     }}>Téléphone : 07 55 22 67 90</p>
                 </div>
             </div>
+            <div class="copy">
+                <h2>Goïta Création Styliste Modéliste Création sur mesure. Copyright © Goita. Tous droits réservés.</h2>
+            </div>
         </>
     )
 }

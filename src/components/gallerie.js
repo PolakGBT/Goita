@@ -62,7 +62,7 @@ const Gallerie = () => {
       display: "flex",
       justifyContent: "center"
     }}>
-      <h1>
+      <h1 class="faso">
         {data.contentfulCollection.titre}
       </h1>
     </div>

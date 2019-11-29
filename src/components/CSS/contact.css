@@ -7,3 +7,15 @@
         flex-direction: column-reverse;
     }
 }
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F1F1F1;
+}
+.copy h2{
+    color:rgb(169, 169, 169);
+    font-size: 14px;
+    text-align: center;
+}
