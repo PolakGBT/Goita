@@ -4,31 +4,64 @@
     overflow: hidden;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top:40px;
 }
-
-.part1{
-    overflow-x: hidden;
+.c-contain-img{
+    display: block;
+    width:60%;
+    
+    height: 100%;
+    position: relative;
 }
-.part2{
-    height: 80%;
+.c-contain-text{
+    background-color:white;
+    display: flex;
+    width:40%;
+    height: 100%;
+    align-items: center;
+    z-index:2;
+}
+.c-contain-text-first{
+    display: flex;
+    border: 6px solid #D6D6D6;
+    flex-direction: column;
+}
+.c-contain-title-one{
+    font-family: JaapokkienchanceRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+.c-contain-text h2{
+    font-family: Didot;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 76px;
+    line-height: 74px;
+    color: #000000;
+    
 }
 
-@media screen and (max-width:500px){
-    .contain{
-        height: 400px;
-    }
-    .part1{
-        overflow-x: initial
-    }
-    .part2{
-        height: 60%;
-    }
-    .faso{
-       font-size: 25px; 
-    }
+.c-contain-text p{
+    font-family: PT Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+color: #4D4D4D;
+}
 
+.imgg{
+    position: absolute;
+    top:50%;
+    left:100%;
+    transform: translate(0%,-50%);
+    height: 70%;
+    width: auto;
+    display:block;
 }
 
 
