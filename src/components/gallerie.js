@@ -46,7 +46,7 @@ function inter(){
   if(bool){
     TweenLite.to(position,1,{'left':'0%'},"same1");
     TweenLite.to(position,1,{x:'-100%'},"same1");
-    TweenLite.to(position,0,{'left':'100%',delay:1},"same2");
+    TweenLite.to(position,0,{'left':'120%',delay:1},"same2");
     TweenLite.to(position,0,{x:'0%',delay:1},"same2");
     position = "#img"+i;
     i++;
@@ -61,25 +61,13 @@ function inter(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   return(
     <>
       <div class ="bar" id="Gallerie">
         <div></div>
       </div>
       <div class="contain">
-        <div class="c-contain-img" onMouseEnter={()=>{bool = false}} onMouseLeave={()=>{bool = true}}>
+        <div class="c-contain-img" onMouseEnter={()=>{bool = false}} onMouseLeave={()=>{bool = true}} onTouchStart={()=>{bool = false}} onTouchEnd={()=>{bool = true}}>
           {list}
         </div>
         <div class="c-contain-text">
