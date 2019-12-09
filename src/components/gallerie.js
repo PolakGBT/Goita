@@ -33,6 +33,7 @@ const Gallerie = () => {
   ></img>
   );
   let bool = true;
+  let phone = false;
   let position = "#img0";
   var i = 0;
 
@@ -61,13 +62,30 @@ function inter(){
 
 
 
+function phonee(){
+  if(bool){
+    bool = false;
+    TweenLite.to(position,0,{position: 'fixed'});
+    TweenLite.to(position,0,{top:0});
+  }
+  else{
+    bool = true;
+    TweenLite.to(position,0,{position: 'absolute'});
+    TweenLite.to(position,0,{top:'50%'});
+  }
+
+}
+
+
+
+
   return(
     <>
       <div class ="bar" id="Gallerie">
         <div></div>
       </div>
       <div class="contain">
-        <div class="c-contain-img" onMouseEnter={()=>{bool = false}} onMouseLeave={()=>{bool = true}} onTouchStart={()=>{bool = false}} onTouchEnd={()=>{bool = true}}>
+        <div class="c-contain-img" onDoubleClick={()=>{phonee()}}>
           {list}
         </div>
         <div class="c-contain-text">
