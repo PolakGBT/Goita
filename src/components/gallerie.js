@@ -66,12 +66,20 @@ function phonee(){
   if(bool){
     bool = false;
     TweenLite.to(position,0,{position: 'fixed'});
-    TweenLite.to(position,0,{top:0});
+    TweenLite.to(position,0,{width: 'auto'});
+    TweenLite.to(position,0,{height: 'auto'});
+    TweenLite.to(position,0,{'z-index': '2001'});
+    TweenLite.to('.wall',0,{display: 'block'});
+
+
   }
   else{
     bool = true;
     TweenLite.to(position,0,{position: 'absolute'});
-    TweenLite.to(position,0,{top:'50%'});
+    TweenLite.to(position,0,{width: 'auto'});
+    TweenLite.to(position,0,{height: '70%'});
+    TweenLite.to('.wall',0,{display: 'none'});
+    TweenLite.to(position,0,{'z-index': '1'});
   }
 
 }
@@ -126,6 +134,7 @@ function phonee(){
           </div>
         </div>
       </div>
+      <div class="wall"></div>
     </>
     )
   }
