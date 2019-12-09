@@ -120,7 +120,7 @@ function phonee(){
               marginRight:'50px',
             }}>
               <h2>Élégance</h2>
-              <h2>& Mixité</h2>
+              <h2>&Mixité</h2>
             </div>
             <div style={{
               marginTop:'20px',
@@ -128,7 +128,7 @@ function phonee(){
               marginBottom:'50px',
             }}>
               <p>L’élégance utile qui valorise</p>
-              <p>l'Homme et de la Femme </p>
+              <p>l'Homme et la Femme </p>
             </div>
           </div>
         </div>

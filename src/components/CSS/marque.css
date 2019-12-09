@@ -1,3 +1,7 @@
 .box-p-info p{
     text-align: justify;
 }
+
+.box-p-info h1{
+    margin-bottom: 20px;
+}
