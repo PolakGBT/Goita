@@ -110,4 +110,10 @@ color: #4D4D4D;
     }
 }
 
+@media screen and (max-width:600px){
+    .c-contain-text h2{
+        font-size: 50px;
+    }
+}
+
 

@@ -81,7 +81,6 @@ function phonee(){
     TweenLite.to('.wall',0,{display: 'none'});
     TweenLite.to(position,0,{'z-index': '1'});
   }
-
 }
 
 
@@ -120,7 +119,7 @@ function phonee(){
               marginLeft:'50px',
               marginRight:'50px',
             }}>
-              <h2>Elegance</h2>
+              <h2>Élégance</h2>
               <h2>& Mixité</h2>
             </div>
             <div style={{
