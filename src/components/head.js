@@ -11,7 +11,7 @@ const Head = () => {
     var elem = document.getElementById(prop);
     var ypos = elem.offsetTop;
     window.scrollTo(0,ypos-100);
-    if(window.innerWidth <= 375){
+    if(window.innerWidth <= 950){
       oppen();
     }
   }
