@@ -49,13 +49,30 @@
 
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     .box-p{
         width: 95%;
         flex-direction: column;
     }
     .box-p-img{
         width: 85%;
+        justify-content: center;
+    }
+    .box-p-info{
+        width:80%;
+    }
+    .box-p-info h1{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:950px){
+    .box-p{
+        width: 95%;
+        flex-direction: column;
+    }
+    .box-p-img{
+        width: 60%;
         justify-content: center;
     }
     .box-p-info{

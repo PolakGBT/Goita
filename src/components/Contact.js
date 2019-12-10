@@ -12,6 +12,7 @@ const Contact = () => {
                 alignItems:'center'
             }}
             class="contact-mobile"
+            id="Conntact"
             >
                 <h1 style={{
                     color:'#848484',
