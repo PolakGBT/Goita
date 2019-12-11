@@ -127,9 +127,9 @@ p{
 .logo-p{
     position: absolute;
     display: flex;
-    height: 80%;
-    top:4px;
-    left:4px;
+    height: 160%;
+    top:5px;
+    left:20px;
     justify-content: center;
     align-items: center;
 

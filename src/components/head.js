@@ -1,7 +1,7 @@
 import React from "react"
 import "./CSS/header.css"
 import menu from "../images/menu.svg"
-import logo from "../images/logo-goita-noir.png"
+import logo from "../images/goita.png"
 import {TweenLite,Power0,CSSPlugin} from "gsap/all.js";
 import {useEffect, useRef } from 'react';
 

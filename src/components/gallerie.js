@@ -36,6 +36,7 @@ const Gallerie = () => {
   let phone = false;
   let position = "#img0";
   var i = 0;
+  var pos = 0;
 
   useEffect(()=>{
     TweenLite.to("#img0",0,{'left':'50%'});
@@ -82,9 +83,6 @@ function phonee(){
     TweenLite.to(position,0,{'z-index': '1'});
   }
 }
-
-
-
 
   return(
     <>

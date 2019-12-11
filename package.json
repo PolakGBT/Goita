@@ -8,6 +8,7 @@
     "@contentful/rich-text-types": "^12.1.2",
     "@madebyconnor/rich-text-to-jsx": "^2.1.3",
     "gatsby": "^2.17.11",
+    "gatsby-cli": "^2.8.18",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-offline": "^3.0.19",
