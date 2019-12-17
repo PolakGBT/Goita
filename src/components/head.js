@@ -39,22 +39,29 @@ const Head = () => {
     }
   }*/
   
-
-  return(
-  <>
-      <div class="header">
-        <div class="logo-p">
+  /*        <div class="logo-p">
           <img src={logo}></img>
         </div>
           <div class="title">
             <h1>GOÏTA</h1>
           </div>
+           */
+
+  return(
+  <>
+      <div class="header">
+
           <div class="menu">
-                <div class="part"onClick={()=>{Scrolling("Accueil")}}><p>ACCUEIL</p></div>
-                <div class="part" onClick={()=>{Scrolling("Presentation")}}><p>SAVOIR-FAIRE</p></div>
-                <div class="part"onClick={()=>{Scrolling("Marque")}}><p>MARQUE</p></div>
-                <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>COLLECTION</p></div>
-                <div class="part"onClick={()=>{Scrolling("Conntact")}}><p>CONTACT</p></div>
+            <div class="part1">
+              <div class="part"onClick={()=>{Scrolling("Accueil")}}><p>ACCUEIL</p></div>
+              <div class="part" onClick={()=>{Scrolling("Presentation")}}><p>SAVOIR-FAIRE</p></div>
+            </div>
+            <img class="part" src={logo}></img>
+            <div class="part2">
+              <div class="part"onClick={()=>{Scrolling("Marque")}}><p>MARQUE</p></div>
+              <div class="part"onClick={()=>{Scrolling("Gallerie")}}><p>COLLECTION</p></div>
+              <div class="part"onClick={()=>{Scrolling("Conntact")}}><p>CONTACT</p></div>
+            </div>
           </div>
           <div class="menu-mobile" onClick={()=>{oppen()}}>
             <img src={menu}></img>
