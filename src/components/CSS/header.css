@@ -80,6 +80,20 @@ p{
 .menu-mobile{
     display: none;
 }
+.logo-mobile{
+    display: none;
+    position: relative;
+    height: 100%;
+    top:1;
+    left:1;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-mobile img{
+    height: 90%;
+    width: auto;
+}
 
 
 @media screen and (max-width:950px){
@@ -105,6 +119,9 @@ p{
     }
     .logo-p img{
         height: 80%!important;
+    }
+    .logo-mobile{
+        display: flex;
     }
     
 }

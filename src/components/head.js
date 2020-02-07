@@ -63,6 +63,9 @@ const Head = () => {
               <div class="part"onClick={()=>{Scrolling("Conntact")}}><p>CONTACT</p></div>
             </div>
           </div>
+          <div class="logo-mobile"onClick={()=>{Scrolling("Accueil")}}>
+            <img src={logo}></img>
+          </div>
           <div class="menu-mobile" onClick={()=>{oppen()}}>
             <img src={menu}></img>
           </div>
