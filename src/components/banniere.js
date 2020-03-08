@@ -7,6 +7,10 @@ import FOUR from  "../images/23.jpg"
 import LOGO from  "../images/logo.png"
 
 const Banniere = () => (
+    <>
+    <div class="slogan">
+        <h2>Élégance & Mixité</h2>
+    </div>
     <div class="banniere" id="Accueil">
         <div class="box">
             <img  class=" reduce-img"src={ONE} alt=""></img>
@@ -15,6 +19,7 @@ const Banniere = () => (
             <img class=" reduce-img"src={FOUR}alt=""></img>
         </div>
     </div>
+    </>
 
 
 )

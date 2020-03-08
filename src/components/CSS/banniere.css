@@ -48,6 +48,23 @@
     display: block;
 }
 
+.slogan{
+    display: flex;
+    border: 3px solid #D6D6D6;
+    justify-content: center;
+    vertical-align: center;
+}
+.slogan h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Didot;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+}
+
 
 
 @media screen and (max-width:500px){
@@ -63,4 +80,5 @@
     }
     
 }
+
 
