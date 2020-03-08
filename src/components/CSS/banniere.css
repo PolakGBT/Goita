@@ -78,6 +78,13 @@
     .box{
         display: inline-block;
     }
+
+    .slogan h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 20px;
+    }
     
 }
 
